@@ -1,0 +1,42 @@
+/*
+    * Mobile (<786px) -------------------------
+    * fixture ----------------sm 
+    * # of columns  ----------4
+    * gutter ----------- -----20px
+    * container --------------100% - (5px * 2 )
+    * margin
+    
+    * Tablet (>=786px) -------------------------
+    * fixture ----------------md
+    * # of columns  ----------12
+    * gutter ----------- -----20px
+    * container --------------100% - (5px * 2 )
+    * margin -----------------30px
+    * container --------------100% - (30px * 2)
+    * max-container ----------960px
+
+    *Desktop ( >= 1200px)-----------------------
+    * fixture ---------------lg
+    * # of colums -----------12
+    * gutter ----------------20px
+    * unit ------------------75px
+    * margin ----------------auto
+    * container -------------1140px
+    * max-container ---------1140px
+*/
+
+$gutter: 20px;
+
+$sm-columns: 4;
+$sm-margin: 5px;
+
+.container {
+  width: 100%;
+  padding: 0 $sm-margin;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
